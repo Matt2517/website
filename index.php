@@ -1,10 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8vdevice-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google" content="nositelinkssearchbox"/>
     <meta name="description" content="Author: Mat, Category: Software">
@@ -12,66 +9,50 @@
     <title>Depression Client</title>
 
     <!--- Favicon --->
-
     <link href="assets/static/favicon.png" rel="shortcut icon">
 
     <!--- Links --->
-
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 </head>
 <body>
 
-<!--- Right Side Content --->
+<!--- Left side content --->
+<div class="left">
+    <div class="flex-center">
 
-<div class="container text-center bold full-height float-left background-red color-white">
-    <div class="display-container">
-        <img src="assets/static/favicon.png" width="128" height="128">
-        <h1 class="display-title">
-            Depression
+        <h1 style="font-size: 110px">Depression</h1>
+        <h1>we give and we take</h1>
+        <h1>
+            <br>
+            <a class="button">DOWNLOAD</a>
         </h1>
-        <h5 class="display-subtitle">Minecraft Client By Mat</h5>
-        <br>
-        <a href="" class="btn">Download</a>
+
     </div>
 </div>
 
-<!--- Right Side Content --->
+<!--- Right side content --->
+<div class="right">
+    <section id="features">
+        <h1>features</h1>
+        <br>
+    </section>
 
-<div class="container full-height background-white">
-    <div class="container full-width">
-        <h3 class="item-title"><i class="fas fa-laptop"></i></h3>
-        <p class="item-desc font-big">This client is dudu do not buy</p>
-        <hr class="separator">
-    </div>
-    <div class="container full-width">
-        <h3 class="item-title"><i class="fas fa-laptop"></i></h3>
-        <p class="item-desc font-big">This client is dudu do not buy</p>
-        <hr class="separator">
-    </div>
-    <div class="container full-width">
-        <h3 class="item-title"><i class="fas fa-laptop"></i></h3>
-        <p class="item-desc font-big">This client is dudu do not buy</p>
-        <hr class="separator">
-    </div>
-    <div class="container full-width">
-        <h3 class="item-title"><i class="fas fa-laptop"></i></h3>
-        <p class="item-desc font-big">This client is dudu do not buy</p>
-        <hr class="separator">
-    </div>
-    <div class="container full-width">
-        <h3 class="item-title"><i class="fas fa-laptop"></i></h3>
-        <p class="item-desc font-big">This client is dudu do not buy</p>
-        <hr class="separator">
-    </div>
-    <div class="container full-width">
-        <h3 class="item-title"><i class="fas fa-laptop"></i></h3>
-        <p class="item-desc font-big">This client is dudu do not buy</p>
-        <hr class="separator">
-    </div>
+    <hr class="separator">
+
+    <section id="videos">
+        <h1>videos</h1>
+        <br>
+        <iframe class="responsive" src="https://www.youtube.com/embed/DUTJxehy2kw"></iframe>
+        <iframe class="responsive" src="https://www.youtube.com/embed/DUTJxehy2kw"></iframe>
+    </section>
+
+    <hr class="separator">
+
+    <section id="credits">
+        <h1>credits</h1>
+        <br>
+    </section>
 </div>
 
 </body>
