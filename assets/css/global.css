@@ -17,9 +17,22 @@
     width: 60%;
     height: 100%;
     position: absolute;
-    background: #e5e5e5;
+    background: whitesmoke;
     text-align: center;
     overflow: auto;
+}
+
+.left-content {
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-content {
+    text-align: center;
 }
 
 hr.separator {
@@ -28,6 +41,34 @@ hr.separator {
     border: none;
     margin: 25px auto;
     width: 40%;
+}
+
+hr.separator-footer {
+    height: 2px;
+    background-color: rgba(0.8, 0.8, 0.8, 0.1);
+    border: none;
+    margin: 25px auto;
+    width: 15%;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background: #ededed;
+}
+
+a.footer-icon {
+    transition: .5s all;
+    color: black;
+    padding: 0 10px;
+}
+
+a.footer-icon:hover {
+    transition: .2s all;
+    color: red;
 }
 
 .button {
@@ -39,13 +80,9 @@ hr.separator {
     cursor: pointer;
     border-radius: 8px;
     width: 250px;
+    transition-duration: 0.2s;
 }
 
-.flex-center {
-    color: whitesmoke;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
