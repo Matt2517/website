@@ -71,6 +71,18 @@ a.footer-icon:hover {
     color: red;
 }
 
+a.git:hover {
+    color:#666;
+}
+
+a.twitter:hover {
+    color:#1DA1F2;
+}
+
+a.mail:hover {
+
+}
+
 .button {
     background: whitesmoke;
     color: black;
