@@ -56,6 +56,10 @@ hr.separator-footer {
     padding-bottom: 20px;
 }
 
+.section-header {
+    font-size: 40px;
+}
+
 .footer {
     background: #ededed;
 }
@@ -68,19 +72,18 @@ a.footer-icon {
 
 a.footer-icon:hover {
     transition: .2s all;
-    color: red;
 }
 
 a.git:hover {
-    color:#666;
+    color: #666;
 }
 
 a.twitter:hover {
-    color:#1DA1F2;
+    color: #1DA1F2;
 }
 
 a.mail:hover {
-
+    color: red;
 }
 
 .button {
