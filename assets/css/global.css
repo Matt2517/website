@@ -80,13 +80,10 @@ a.git:hover {
 
 a.twitter:hover {
     color: #1DA1F2;
-<<<<<<< HEAD
-=======
 }
 
 a.mail:hover {
     color: red;
->>>>>>> 41605642920e7eca679f05c9de57c59bbd09b631
 }
 
 .button {
@@ -103,7 +100,6 @@ a.mail:hover {
 
 .button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-<<<<<<< HEAD
 }
 
 .card {
@@ -152,6 +148,4 @@ a.mail:hover {
     border-bottom: 1px solid red;
     width: 85%;
     margin: 0 auto;
-=======
->>>>>>> 41605642920e7eca679f05c9de57c59bbd09b631
 }
