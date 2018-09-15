@@ -1,0 +1,29 @@
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animate-bottom;
+    -webkit-animation-duration: .5s;
+    animation-name: animate-bottom;
+    animation-duration: .5s
+}
+
+@-webkit-keyframes animate-bottom {
+    from {
+        bottom: -190px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animate-bottom {
+    from {
+        bottom: -190px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
