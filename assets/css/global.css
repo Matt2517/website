@@ -47,7 +47,7 @@ hr.separator-footer {
     height: 2px;
     background-color: rgba(0.8, 0.8, 0.8, 0.1);
     border: none;
-    margin: 25px auto;
+    margin: 10px auto;
     width: 15%;
 }
 
@@ -75,7 +75,7 @@ a.footer-icon:hover {
 }
 
 a.git:hover {
-    color: #666;
+    color: #9a9a9a;
 }
 
 a.twitter:hover {
@@ -91,10 +91,11 @@ a.mail:hover {
     color: black;
     padding: 20px;
     text-decoration: none;
+    display: inline-block;
     font-size: 15px;
     cursor: pointer;
     border-radius: 8px;
-    width: 250px;
+    width: 150px;
     transition-duration: 0.2s;
 }
 
@@ -109,11 +110,6 @@ a.mail:hover {
     max-width: 200px;
     cursor: default;
     transition: .4s all;
-}
-
-.card:hover {
-    transition: .4s all;
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card .card-title {

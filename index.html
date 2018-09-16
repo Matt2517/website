@@ -20,8 +20,6 @@
 </head>
 <body>
 
-<div class="right" id="loader"></div>
-
 <!--- Left side content --->
 <div class="left">
     <div class="left-content animate-bottom">
@@ -38,27 +36,29 @@
 
 <!--- Right side content --->
 <div class="right">
-    <div id="right-content" class="right-content animate-bottom">
+
+    <div id="loader" class="loader">
+    </div>
+
+    <div id="right-content" class="right-content animate-bottom" style="display: none;">
 
         <section id="features" class="section">
             <h1 class="section-header">features</h1>
             <hr class="separator">
-            <iframe src="https://www.youtube.com/embed/vxE_rpWZJUM" frameborder="0" scrolling="auto" width="400px"
-                    height="300px"></iframe>
-            <iframe src="https://www.youtube.com/embed/5yyDzumGSQI" frameborder="0" scrolling="auto" width="400px"
-                    height="300px"></iframe>
         </section>
 
-        <section id="videos" class="section">
+        <section class="section">
             <h1 class="section-header">videos</h1>
             <hr class="separator">
-            <iframe src="https://www.youtube.com/embed/vxE_rpWZJUM" frameborder="0" scrolling="auto" width="400px"
-                    height="300px"></iframe>
-            <iframe src="https://www.youtube.com/embed/5yyDzumGSQI" frameborder="0" scrolling="auto" width="400px"
-                    height="300px"></iframe>
+            <div id="videos">
+                <iframe id="video-1" src="https://www.youtube.com/embed/vxE_rpWZJUM" frameborder="0"
+                        width="400px" height="300px"></iframe>
+                <iframe id="video-2" src="https://www.youtube.com/embed/5yyDzumGSQI" frameborder="0"
+                        width="400px" height="300px"></iframe>
+            </div>
         </section>
 
-        <section id="credits" class="section">
+        <section class="section">
             <h1 class="section-header">credits</h1>
             <hr class="separator">
 
@@ -104,30 +104,31 @@
                     <a class="footer-icon twitter" href="https://twitter.com/idontnowhat69">
                         <i class="fab fa-twitter fa-1x"> </i>
                     </a>
-                    <a class="footer-icon" href="mailto:ihaq@envyclient.com">
+                    <a class="footer-icon mail" href="mailto:ihaq@envyclient.com">
                         <i class="fas fa-envelope fa-1x"> </i>
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="footer" class="section footer">
-            <h3>&copy; 2018 Mat</h3>
+        <section class="section footer">
+            <h4>&copy; 2018 Mat</h4>
             <hr class="separator-footer">
             <a class="footer-icon git" href="https://github.com/Matkocro10">
-                <i class="fab fa-github fa-2x"> </i>
+                <i class="fab fa-github fa-lg"> </i>
             </a>
             <a class="footer-icon twitter" href="https://twitter.com/idontnowhat69">
-                <i class="fab fa-twitter fa-2x"> </i>
+                <i class="fab fa-twitter fa-lg"> </i>
             </a>
-            <a class="footer-icon" href="mailto:ihaq@envyclient.com">
-                <i class="fas fa-envelope fa-2x"> </i>
+            <a class="footer-icon mail" href="mailto:ihaq@envyclient.com">
+                <i class="fas fa-envelope fa-lg"> </i>
             </a>
         </section>
 
     </div>
 </div>
 
+<script type="text/javascript" src="assets/js/global.js"></script>
 
 </body>
 </html>
