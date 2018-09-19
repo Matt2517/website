@@ -1,9 +1,9 @@
-document.getElementById('video-2').onload = function () {
+document.getElementById("video-2").onload = function () {
     document.getElementById("loader").style.display = "none";
     document.getElementById("right-content").style.display = "block";
 };
 
-function html(image, frameID) {
+function playVideo(image, frameID) {
     const frame = document.getElementById(frameID);
 
     image.style.display = "none";
