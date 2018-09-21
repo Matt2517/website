@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8vdevice-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google" content="nositelinkssearchbox"/>
-    <meta name="description" content="Author: Mat & iHaq, Category: Software">
+    <meta name="description" content="A Minecraft 1.8.8 hacked client.">
+    <meta name="keywords" content="iHaq,Mat,Obscure,Depression,WizardHax">
 
     <title>Depression Client</title>
 
@@ -25,13 +25,11 @@
         }
 
         gtag('js', new Date());
-
         gtag('config', 'UA-78987238-6');
     </script>
 </head>
 <body>
 
-<!--- Left side content --->
 <div class="left">
     <div class="left-content animate-bottom">
 
@@ -45,7 +43,6 @@
     </div>
 </div>
 
-<!--- Right side content --->
 <div class="right">
 
     <div id="loader" class="loader">
@@ -74,14 +71,16 @@
             <h1 class="section-header">videos</h1>
             <hr class="separator">
             <div class="video-image shadow">
-                <img src="http://i1.ytimg.com/vi/vxE_rpWZJUM/maxresdefault.jpg" width="400px" height="250px"
-                     onClick="playVideo(this, 'video-1');"/>
+                <img id="video-1-image" src="http://i1.ytimg.com/vi/vxE_rpWZJUM/maxresdefault.jpg" width="400px"
+                     height="250px">
+                <span onClick="playVideo(this, 'video-1','video-1-image');"></span>
                 <iframe id="video-1" src="https://www.youtube.com/embed/vxE_rpWZJUM" frameborder="0" width="400px"
                         height="250px" style="display: none" allow="autoplay" allowfullscreen></iframe>
             </div>
             <div class="video-image shadow">
-                <img src="http://i1.ytimg.com/vi/5yyDzumGSQI/maxresdefault.jpg" width="400px"
-                     height="250px" onClick="playVideo(this, 'video-2');"/>
+                <img id="video-2-image" src="http://i1.ytimg.com/vi/5yyDzumGSQI/maxresdefault.jpg" width="400px"
+                     height="250px"/>
+                <span onClick="playVideo(this, 'video-2','video-2-image');"></span>
                 <iframe id="video-2" src="https://www.youtube.com/embed/5yyDzumGSQI" frameborder="0"
                         width="400px" height="250px" style="display: none" allow="autoplay" allowfullscreen></iframe>
             </div>
