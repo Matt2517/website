@@ -46,6 +46,14 @@ hr.content {
     width: 35%;
 }
 
+hr.vertical {
+    height: 20px;
+    background-color: white;
+    border: none;
+    width: 2px;
+    display: inline-block;
+}
+
 hr.footer {
     height: 2px;
     background-color: rgba(0.8, 0.8, 0.8, 0.1);
@@ -127,7 +135,7 @@ a.mail:hover, a.youtube:hover {
     right: 0;
     z-index: 1;
     background: url("../static/play.png") no-repeat center center;
-    background-size: 128px 128px;
+    background-size: 96px 96px;
     transition: all 0.2s;
 }
 
