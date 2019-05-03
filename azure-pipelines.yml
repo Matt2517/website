@@ -13,7 +13,9 @@ steps:
   - task: CopyFiles@2
     inputs:
       SourceFolder: '$(System.DefaultWorkingDirectory)'
-      Contents: '**'
+      Contents: |
+        **/*
+        !.git/**/*
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
       CleanTargetFolder: true
       OverWrite: true
