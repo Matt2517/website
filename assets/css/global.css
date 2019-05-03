@@ -46,14 +46,6 @@ hr.content {
     width: 35%;
 }
 
-hr.vertical {
-    height: 20px;
-    background-color: white;
-    border: none;
-    width: 2px;
-    display: inline-block;
-}
-
 hr.footer {
     height: 2px;
     background-color: rgba(0.8, 0.8, 0.8, 0.1);
