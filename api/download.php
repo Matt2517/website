@@ -1,36 +1,47 @@
 <?php
-if (!empty($_GET)) {
-    if (!empty($_GET['key'])) {
-        $key = $_GET['key'];
-        if ($key === "versions") {
-            $dir = "../assets/versions/*";
-            $versions = array();
-            foreach (glob($dir) as $file) {
-                if (!is_dir($file)) {
-                    array_push($versions, basename($file));
-                }
-            }
-            header('Content-Type: application/json');
-            echo json_encode(array('versions' => $versions));
-        } else if ($key === "download") {
-            if (!empty($_GET['version'])) {
-                downloadFile('https://www.depressionclient.ml/assets/versions/Depression-' . $_GET['version'] . '.zip', 'Depression-' . $_GET['version']);
-                die();
-            } else {
-                header('Content-Type: application/json');
-                echo json_encode(array('status' => 'INVALID_VERSION'));
-            }
-        } else {
-            header('Content-Type: application/json');
-            echo json_encode(array('status' => 'INVALID_CALL'));
+
+header('Content-Type: application/json');
+
+if (empty($_GET)) {
+    exit(json_encode([
+        'status' => 'INVALID'
+    ]));
+}
+
+if (empty($_GET['key'])) {
+    echo json_encode([
+        'status' => 'INVALID'
+    ]);
+}
+
+$key = $_GET['key'];
+if ($key === "versions") {
+    $dir = "../assets/versions/*";
+    $versions = [];
+    foreach (glob($dir) as $file) {
+        if (!is_dir($file)) {
+            array_push($versions, basename($file));
         }
+    }
+    header('Content-Type: application/json');
+    echo json_encode([
+        'versions' => $versions
+    ]);
+} else if ($key === "download") {
+    if (!empty($_GET['version'])) {
+        downloadFile('https://depressionclient.club/assets/versions/Depression-' . $_GET['version'] . '.zip', 'Depression-' . $_GET['version']);
+        die();
     } else {
         header('Content-Type: application/json');
-        echo json_encode(array('status' => 'INVALID_CALL'));
+        echo json_encode([
+            'status' => 'INVALID_VERSION'
+        ]);
     }
 } else {
     header('Content-Type: application/json');
-    echo json_encode(array('status' => 'INVALID'));
+    echo json_encode([
+        'status' => 'INVALID_CALL'
+    ]);
 }
 
 function downloadFile($link, $name)
