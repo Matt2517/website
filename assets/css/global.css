@@ -64,24 +64,8 @@ hr.footer {
 }
 
 .footer {
-    position: absolute;
     background: #ededed;
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.14);
-}
-
-a.footer-icon {
-    transition: .5s all;
-    color: black;
-    padding: 0 10px;
-    text-decoration: none !important;
-}
-
-a.footer-icon:hover {
-    transition: .2s all;
-}
-
-a.git:hover {
-    color: #9a9a9a;
 }
 
 .button {
@@ -152,6 +136,47 @@ a.git:hover {
     cursor: default;
     transition: .3s all;
     border-radius: 8px;
+}
+
+.card {
+    display: inline-block;
+    padding: 25px 10px;
+    width: 100%;
+    max-width: 200px;
+    cursor: default;
+    transition: .4s all;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.card .card-title {
+    width: 100%;
+    height: fit-content;
+    background: red;
+    color: #fff;
+    padding: 10px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card .card-desc {
+    padding: 10px 5px;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.card .card-social {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 5px;
+}
+
+.card .card-line {
+    border: none;
+    border-bottom: 1px solid red;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .shadow {
