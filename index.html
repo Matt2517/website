@@ -13,7 +13,6 @@
     <link href="favicon.png" rel="shortcut icon">
 
     <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -40,10 +39,7 @@
 
 <div class="right">
 
-    <div id="loader" class="loader">
-    </div>
-
-    <div id="right-content" class="right-content animate-bottom" style="display: none;">
+    <div class="right-content">
 
         <section id="features" class="section">
             <h1 class="section-header">features</h1>
@@ -74,64 +70,48 @@
             <div class="video-image shadow">
                 <img id="video-1-image"
                      src="https://i1.ytimg.com/vi/aL86KQnKaW8/maxresdefault.jpg"
-                     width="400px"
-                     height="250px"
                      alt="thumbnail">
                 <span onClick="playVideo(this, 'video-1', 'video-1-image');"></span>
                 <iframe id="video-1"
-                        src="https://www.youtube.com/embed/aL86KQnKaW8"
-                        width="400px"
-                        height="250px"
-                        style="display: none"
-                        allow="autoplay"
+                        data-src="https://youtube.com/embed/aL86KQnKaW8"
+                        class="video-iframe"
+                        allow="autoplay; encrypted-media;"
                         allowfullscreen>
                 </iframe>
             </div>
             <div class="video-image shadow">
                 <img id="video-2-image"
                      src="https://i1.ytimg.com/vi/-w32txMw6rY/maxresdefault.jpg"
-                     width="400px"
-                     height="250px"
                      alt="thumbnail">
                 <span onClick="playVideo(this, 'video-2', 'video-2-image');"></span>
                 <iframe id="video-2"
-                        src="https://www.youtube.com/embed/-w32txMw6rY"
-                        width="400px"
-                        height="250px"
-                        style="display: none"
-                        allow="autoplay"
+                        data-src="https://youtube.com/embed/-w32txMw6rY"
+                        class="video-iframe"
+                        allow="autoplay; encrypted-media;"
                         allowfullscreen>
                 </iframe>
             </div>
             <div class="video-image shadow">
                 <img id="video-3-image"
                      src="https://i1.ytimg.com/vi/WhbpJ5087Qw/maxresdefault.jpg"
-                     width="400px"
-                     height="250px"
                      alt="thumbnail">
                 <span onClick="playVideo(this, 'video-3', 'video-3-image');"></span>
                 <iframe id="video-3"
-                        src="https://www.youtube.com/embed/WhbpJ5087Qw"
-                        width="400px"
-                        height="250px"
-                        style="display: none"
-                        allow="autoplay"
+                        data-src="https://youtube.com/embed/WhbpJ5087Qw"
+                        class="video-iframe"
+                        allow="autoplay; encrypted-media;"
                         allowfullscreen>
                 </iframe>
             </div>
             <div class="video-image shadow">
                 <img id="video-4-image"
                      src="https://i1.ytimg.com/vi/Ewcx11PzHq8/maxresdefault.jpg"
-                     width="400px"
-                     height="250px"
                      alt="thumbnail">
                 <span onClick="playVideo(this, 'video-4', 'video-4-image');"></span>
                 <iframe id="video-4"
-                        src="https://www.youtube.com/embed/Ewcx11PzHq8"
-                        width="400px"
-                        height="250px"
-                        style="display: none"
-                        allow="autoplay"
+                        class="video-iframe"
+                        data-src="https://youtube.com/embed/Ewcx11PzHq8"
+                        allow="autoplay; encrypted-media;"
                         allowfullscreen>
                 </iframe>
             </div>
@@ -144,7 +124,23 @@
     </div>
 </div>
 
-<script type="text/javascript" src="assets/js/global.js"></script>
+<script type="text/javascript">
+    // play the clicked video
+    function playVideo(span, frameID, imageID) {
+        const frame = document.getElementById(frameID);
+        const image = document.getElementById(imageID);
+
+        // hiding the play button
+        span.style.display = "none";
+
+        // hiding the video thumbnail
+        image.style.display = "none";
+
+        // showing the iframe and playing the video
+        frame.style.display = "block";
+        frame.src = frame.getAttribute('data-src') + "?autoplay=1";
+    }
+</script>
 
 </body>
 </html>
